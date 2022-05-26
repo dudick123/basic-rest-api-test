@@ -7,7 +7,7 @@ def test_get_all_comments():
     response = requests.post("http://localhost:8080/auth/login", data=payload)
     assert response.status_code == 200
 
-    
+
     #step 2: get all comments
     access_token = response.json()['access_token']
     request_headers = {
