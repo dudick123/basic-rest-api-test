@@ -1,6 +1,5 @@
-from urllib import response
-import pytest
 import requests
+
 
 def test_health_endpoints_status_code():
     """
